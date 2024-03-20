@@ -1,0 +1,253 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition:  .2s linear;
+}
+
+html{
+    font-size: 62,5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+.footer a:hover{
+    text-align: none;
+    text-decoration: none;
+    color: #9c5b5b;
+}
+
+header{
+    position: sticky;
+    top: 0; left: 0; right: 0;
+    background-color: rgb(192, 160, 162);
+    padding:  2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0. 5 rem 1 rem black rgba(0, 0, 0, 0);
+    overflow: hidden;
+}
+
+header .logo{
+    font-size: 3rem;
+    color: rgb(187, 84, 84);
+    font-weight: bolder;
+
+}
+
+header .logo span{
+    color: brown;
+}
+header .logo:hover{
+    color: brown;
+    text-decoration-line: none;
+    text-decoration: none;
+}
+
+header .navbar a{
+    font-size: 2 rem;
+    padding:  0 1.5rem;
+    color: brown;
+}
+
+header .navbar a:hover{
+    color: aquamarine;
+    text-decoration-line: none;
+    text-decoration: none;
+}
+
+header .icons a{
+    font-size: 1.5rem;
+    color:  #b31d1d;
+    margin-left: 1.5rem;
+}
+
+header .icons a:hover{
+    color: #d10a0a;
+    text-decoration-line: none;
+    text-decoration: none;
+}
+
+header .logo span:hover{
+    color: #fff;
+}
+header #toggler{
+    display: none;
+}
+
+header .fa-bars{
+    font-size: 3rem;
+    color: #333;
+    border-radius:  .5rem;
+    padding: .5rem 1.5 rem;
+    cursor: pointer;
+    border: 1rem solid rgba(0, 0, 0, 3); 
+    display: none;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    /* background-image: url(../Chocolates/bombones/10.jpeg) ;   */
+    background-color: #e9e1e1;
+background-size: cover;
+background-position: center;
+}
+
+
+.home .content{
+    max-width: 50rem;
+}
+
+.home .content h3{
+    font-size: 3rem;
+    color: #333;
+}
+
+
+.home .content span{
+    font-size: 3.5rem;
+    color: #a05a5a;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+
+.home .content p{
+    font-size: 1rem;
+    color: #331111;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: rgba(0, 0, 0, 0);
+}
+
+.heading span{
+    color: aqua;
+}
+
+
+
+.products .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+}
+
+
+.boton{
+    background-color: #a05a5a;
+    color: #331111;
+    padding: 58%;
+    padding-top: 0px;
+    text-decoration-line: none;
+    text-decoration: none;
+}
+
+.boton:hover{
+    background-color: #9c5b5b;
+    color: #ffffff;
+   
+    text-decoration-line: none;
+    text-decoration: none;
+}
+
+
+.imann{
+    width: 40%;
+    height: 49%;
+    margin-left: 26%;
+    padding: 45px;
+} 
+
+
+
+/* media queries */
+@media (max-width: 991px){
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding: 2rem;
+    }
+
+
+    section{
+        padding: 2rem;
+    }
+
+    .home{
+        background-position: left;
+    }
+}
+
+@media (max-width: 768px){
+    header .fa-bars {
+        display: block;
+
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #eee;
+        border-top: 1rem solid rgba(0, 0, 0, 0);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+    }
+
+ .uk-grid{
+    border-spacing: 10px 5px;
+ }
+    
+
+    header navbar a {
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #fff;
+        border: 1rem solid rgba(0, 0, 0, 0);
+        display: block;
+    }
+
+    .home .content h3{
+        font-size: 5rem;
+
+    }
+    .home .content span{
+        font-size: 2.5rem;
+
+    }
+}
+
+
+
+
+@media (max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+
+    .heading{
+        font-size: 3rem;
+    }
+    
+}
