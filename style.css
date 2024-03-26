@@ -1,3 +1,21 @@
+:root {
+   background-color:  #ffffff;
+  }
+
+.uk-divider-small{
+    background-color: #770707;
+    color: #aa0000;
+}
+.destacados{
+    padding-top: 10%;
+    padding: 5%;
+}
+
+.categorias{
+    padding: 10%;
+    padding-top: 10%;
+}
+
 *{
     margin: 0; padding: 0;
     box-sizing: border-box;
@@ -5,6 +23,7 @@
     text-decoration: none;
     text-transform: capitalize;
     transition:  .2s linear;
+    
 }
 
 html{
@@ -12,12 +31,15 @@ html{
     scroll-behavior: smooth;
     scroll-padding-top: 6rem;
     overflow-x: hidden;
+    }
+
+body{
+    background-color: #ffffff;
 }
 
-section{
-    padding: 2rem 9%;
+.seccion{
+    background-color: #ffffff;
 }
-
 .footer a:hover{
     text-align: none;
     text-decoration: none;
@@ -27,7 +49,7 @@ section{
 header{
     position: sticky;
     top: 0; left: 0; right: 0;
-    background-color: rgb(192, 160, 162);
+    background-color: #bb6868;
     padding:  2rem 9%;
     display: flex;
     align-items: center;
@@ -35,6 +57,7 @@ header{
     z-index: 1000;
     box-shadow: 0. 5 rem 1 rem black rgba(0, 0, 0, 0);
     overflow: hidden;
+    
 }
 
 header .logo{
@@ -54,13 +77,13 @@ header .logo:hover{
 }
 
 header .navbar a{
-    font-size: 2 rem;
-    padding:  0 1.5rem;
-    color: brown;
+    font-size: 1 rem;
+    padding:  8rem;
+    color: rgb(255, 255, 255);
 }
 
 header .navbar a:hover{
-    color: aquamarine;
+    color: rgb(182, 134, 134);
     text-decoration-line: none;
     text-decoration: none;
 }
@@ -155,16 +178,17 @@ background-position: center;
 
 .boton{
     background-color: #a05a5a;
-    color: #331111;
+    color: #ffffff;
     padding: 58%;
     padding-top: 0px;
     text-decoration-line: none;
     text-decoration: none;
+    margin-left: 20%;
 }
 
 .boton:hover{
-    background-color: #9c5b5b;
-    color: #ffffff;
+    background-color: #c0a4a4;
+    color: #000000;
    
     text-decoration-line: none;
     text-decoration: none;
@@ -178,6 +202,95 @@ background-position: center;
     padding: 45px;
 } 
 
+
+
+
+.uk-child {
+    background-color: #333;
+}
+
+.categoria{
+ color: #ffffff;
+ padding-top: 25%;
+ font-family: 'Playfair Display', serif;
+}
+
+
+.logo_web {
+    width: 140px; /* Tamaño inicial del logo */
+    transition: width 0.5s; /* Suaviza la transición de tamaño */
+    position: sticky;
+    z-index: 9999;
+    top: 0;
+    border-radius: 60%;
+    top: 60px; /* Ajusta esta propiedad para cambiar la posición vertical del logo */
+    object-fit: cover;
+    
+    
+    
+  }
+
+/* Clase para reducir el tamaño del logo */
+.logo_web.small {
+  width: 120px; /* Nuevo tamaño del logo al hacer scroll */
+ 
+  top: 10px;
+}
+
+
+
+
+
+
+footer{
+    background-color: #ffffff;
+}
+
+
+.uk-card1 {
+    display: flex; /* Utiliza flexbox para alinear los elementos hijos */
+    flex-direction: column; /* Alinea los elementos en columnas */
+    justify-content: center; /* Centra verticalmente los elementos */
+    align-items: center; 
+}
+
+
+
+.container {
+    position: relative;
+    background: #c57878;
+    height: 10vh;
+  }
+  
+  .wave {
+    position: absolute;
+    height: 66px;
+    width: 100%;
+    background:  #c57878;;
+    bottom: 0;
+  }
+  
+  .wave::before, .wave::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+  }
+  
+  .wave::before {
+    width: 55%;
+    height: 109%;
+    background-color: #fff;
+    right: -1.5%;
+    top: 60%;
+  }
+  .wave::after {
+    width: 55%;
+    height: 100%;
+    background-color:  #c57878;;
+    left: -1.5%;
+    top: 40%;
+  }
 
 
 /* media queries */
@@ -251,3 +364,6 @@ background-position: center;
     }
     
 }
+
+
+
